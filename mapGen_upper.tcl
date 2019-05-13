@@ -3,7 +3,7 @@
 ###################
 #	Copyright (c) 2019 Yuji SODE <yuji.sode@gmail.com>
 ###################
-#tool taht converts linear numerical data into text map.
+#tool that converts linear numerical data into text map.
 #text map is composed of 0, 1 and newline character (Unicode U+00000A)
 ###################
 #
