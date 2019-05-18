@@ -1,11 +1,25 @@
 #brMap
 #mapGen_lower.tcl
-###################
+##===================================================================
 #	Copyright (c) 2019 Yuji SODE <yuji.sode@gmail.com>
-###################
-#tool that converts linear numerical data into text map.
+#
+#	This software is released under the MIT License.
+#	See LICENSE or http://opensource.org/licenses/mit-license.php
+##===================================================================
+#Tool that converts linear numerical data into text map.
+#
 #text map is composed of 0, 1 and newline character (Unicode U+00000A)
-###################
+#
+#--- [mapping rule] ---
+#it returns 1 if the current cell value is less than average of its surroundings or 0
+#
+#=== Synopsis ===
+#`mapGen_lower width data;`
+#
+#--- Parameters ---
+# - $width: positive integer
+# - $data: numerical list
+##===================================================================
 #
 proc mapGen_lower {width data} {
 	# - $width: positive integer
