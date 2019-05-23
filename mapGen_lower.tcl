@@ -17,12 +17,12 @@
 #`mapGen_lower width data;`
 #
 #--- Parameters ---
-# - $width: positive integer
+# - $width: positive integer width
 # - $data: numerical list
 ##===================================================================
 #
 proc mapGen_lower {width data} {
-	# - $width: positive integer
+	# - $width: positive integer width
 	# - $data: numerical list
 	#N is data length in double
 	set N [expr {double([llength $data])}];
