@@ -1,6 +1,9 @@
-#sample20190514.tcl
+#sample20190523_upperValue.tcl
 source brMap.tcl;
-source mapGen_upper.tcl;
+source mapGen_upperValue.tcl;
+#
+set random [expr {rand()}];
+#
 set map01 {};
 set i 0;
 set l {};
@@ -10,5 +13,6 @@ while {$i<10000} {
 	incr i 1;
 };
 #converting data into 0|1 text map
-set map01 [mapGen_upper 100 $l];
+set map01 [mapGen_upperValue 100 $random $l];
+puts stdout "values more than $random";
 puts stdout [::brmap::brMap $map01];
