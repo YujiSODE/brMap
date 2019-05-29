@@ -9,6 +9,9 @@
 * Tool that scans a canvas element and generates download link for the RGBa data.
 *
 *=== Synopsis ===
+*`canvasToTcl(canvasId);`
+*`canvasToTcl(canvasId,x0,y0);`
+*`canvasToTcl(canvasId,x0,y0,w,h);`
 *`canvasToTcl(canvasId,x0,y0,w,h,element);`
 *
 *--- Parameters ---
@@ -40,9 +43,9 @@ function canvasToTcl(canvasId,x0,y0,w,h,element){
 	y0=!y0?0:y0;
 	y0=y0<0?0:Math.floor(y0);
 	w=!w?100:w;
-	w=w<100?100:Math.floor(w);
+	w=w<10?10:Math.floor(w);
 	h=!h?100:h;
-	h=h<100?100:Math.floor(h);
+	h=h<10?10:Math.floor(h);
 	//======
 	var A=window.document.createElement('a'),
 		c=document.getElementById(canvasId).getContext('2d'),
