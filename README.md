@@ -29,7 +29,8 @@ It requires Tcl 8.6+.
 > - `$map`: text map that is composed of 0, 1 and newline character (Unicode U+00000A)
 
 ### Tcl
-It requires Tcl 8.6+.  
+It requires Tcl 8.6+.
+
 #### mapGen: Tool that converts linear numerical data into text map
 - `mapGen_upper.tcl`: it returns 1 if the current cell value is more than average of its surroundings or 0
 - `mapGen_upperValue.tcl`: it returns 1 if the current cell value is more than given value or 0
@@ -48,6 +49,15 @@ It requires Tcl 8.6+.
 > - `$width`: positive integer width
 > - `$value`: numerical value
 > - `$data`: numerical list
+
+#### rgbaParse: Tool that converts a linear list of RGBa color values into a numerical list
+- `rgbaParse.tcl`: RGBa color: `(R,G,B,a)` => `(R+G+B)*a/255`
+
+>**Synopsis**  
+>`rgbaParse rgba;`  
+>
+>**Parameters**  
+> - `$rgba`: a list of RGBa color values (`0` to `255`)
 
 ### JavaScript
 - `canvasToTcl.js`: Tool that scans a canvas element and generates download link for the RGBa data.
