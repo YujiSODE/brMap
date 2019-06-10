@@ -58,6 +58,7 @@ function canvasToTcl(canvasId,x0,y0,w,h,element){
 	A.download=fileName;
 	A.textContent=fileName;
 	A.href=url;
+	element.appendChild(document.createElement('br'));
 	element.appendChild(A);
 	A=c=s=url=d=fileName=null;
 }
