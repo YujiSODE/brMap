@@ -18,27 +18,30 @@ ______
     ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ______
 
-## 1. Description and Scripts
+## 1. Description and scripts
 ### main script
 It requires Tcl 8.6+.  
 - `brMap.tcl`: Tool that shows mapping data using Braille Pattern.
->Synopsis
+>Synopsis  
 >`::brmap::brMap map;`
 >
->Parameters
-> - $map: text map that is composed of 0, 1 and newline character (Unicode U+00000A)
+>Parameters  
+> - `$map`: text map that is composed of 0, 1 and newline character (Unicode U+00000A)
 
 ### Tcl
 It requires Tcl 8.6+.  
 #### mapGen: Tool that converts linear numerical data into text map
 - `mapGen_upper.tcl`: it returns 1 if the current cell value is more than average of its surroundings or 0
+- `mapGen_upperValue.tcl`: it returns 1 if the current cell value is more than given value or 0
 
->Synopsis
->`mapGen_upper width data;`
+>Synopsis  
+>`mapGen_upper width data;`  
+>`mapGen_upperValue width value data;`  
 >
->Parameters
-> - $width: positive integer width
-> - $data: numerical list
+>Parameters  
+> - `$width`: positive integer width
+> - `$value`: numerical value
+> - `$data`: numerical list
 
 ### JavaScript
 - `canvasToTcl.js`: Tool that scans a canvas element and generates download link for the RGBa data.
