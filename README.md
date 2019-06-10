@@ -19,12 +19,22 @@ ______
 ______
 
 ## 1. Description and Scripts
+#### main script
+It requires Tcl 8.6+.  
+- `brMap.tcl`: Tool that shows mapping data using Braille Pattern.
+>Synopsis
+>`::brmap::brMap map;`
+>
+>--- Parameters ---
+> - $map: text map that is composed of 0, 1 and newline character (Unicode U+00000A)
+
 #### Tcl
 It requires Tcl 8.6+.  
-main script in Tcl  
-- `brMap.tcl`: Tool that shows mapping data using Braille Pattern.
+>
+
 #### JavaScript
 - `canvasToTcl.js`: Tool that scans a canvas element and generates download link for the RGBa data.
+>
 
 ## 2. Library list
 - 	Sode, Y. 2018-2019. brailleGen/brailleGen_min.tcl, the MIT License: https://gist.github.com/YujiSODE/e3453d43e9733e933c64c52eca45bcfe
