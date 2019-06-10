@@ -19,7 +19,7 @@ ______
 ______
 
 ## 1. Description and scripts
-### main script
+### 1-1. main script
 It requires Tcl 8.6+.  
 - `brMap.tcl`: Tool that shows mapping data using Braille Pattern
 >**Synopsis**  
@@ -28,7 +28,7 @@ It requires Tcl 8.6+.
 >**Parameters**  
 > - `$map`: text map that is composed of 0, 1 and newline character (Unicode U+00000A)
 
-### Tcl
+### 1-2. Tcl
 It requires Tcl 8.6+.
 
 #### mapGen: Tool that converts linear numerical data into text map
@@ -59,7 +59,7 @@ It requires Tcl 8.6+.
 >**Parameters**  
 > - `$rgba`: a list of RGBa color values (`0` to `255`)
 
-### JavaScript
+### 1-3. JavaScript
 - `canvasToTcl.js`: Tool that scans a canvas element and generates download link for the RGBa data
 
 >**Synopsis**  
