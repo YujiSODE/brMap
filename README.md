@@ -33,10 +33,14 @@ It requires Tcl 8.6+.
 #### mapGen: Tool that converts linear numerical data into text map
 - `mapGen_upper.tcl`: it returns 1 if the current cell value is more than average of its surroundings or 0
 - `mapGen_upperValue.tcl`: it returns 1 if the current cell value is more than given value or 0
+- `mapGen_lower.tcl`: it returns 1 if the current cell value is less than average of its surroundings or 0
+- `mapGen_lowerValue.tcl`: it returns 1 if the current cell value is less than given value or 0
 
 >Synopsis  
 >`mapGen_upper width data;`  
 >`mapGen_upperValue width value data;`  
+>`mapGen_lower width data;`  
+>`mapGen_lowerValue width value data;`
 >
 >Parameters  
 > - `$width`: positive integer width
