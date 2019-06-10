@@ -16,7 +16,7 @@
 #`rgbaParse rgba;`
 #
 #--- Parameters ---
-# - rgba: a list of RGBa color values (0 to 255)
+# - $rgba: a list of RGBa color values (0 to 255)
 ##===================================================================
 #
 proc rgbaParse rgba {
