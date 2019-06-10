@@ -21,11 +21,11 @@ ______
 ## 1. Description and scripts
 ### main script
 It requires Tcl 8.6+.  
-- `brMap.tcl`: Tool that shows mapping data using Braille Pattern.
->Synopsis  
+- `brMap.tcl`: Tool that shows mapping data using Braille Pattern
+>**Synopsis**  
 >`::brmap::brMap map;`
 >
->Parameters  
+>**Parameters**  
 > - `$map`: text map that is composed of 0, 1 and newline character (Unicode U+00000A)
 
 ### Tcl
@@ -35,14 +35,16 @@ It requires Tcl 8.6+.
 - `mapGen_upperValue.tcl`: it returns 1 if the current cell value is more than given value or 0
 - `mapGen_lower.tcl`: it returns 1 if the current cell value is less than average of its surroundings or 0
 - `mapGen_lowerValue.tcl`: it returns 1 if the current cell value is less than given value or 0
+- `mapGen_gradient.tcl`: it returns 1 if the current cell is in gradient or 0
 
->Synopsis  
+>**Synopsis**  
 >`mapGen_upper width data;`  
 >`mapGen_upperValue width value data;`  
 >`mapGen_lower width data;`  
->`mapGen_lowerValue width value data;`
+>`mapGen_lowerValue width value data;`  
+>`mapGen_gradient width data;`  
 >
->Parameters  
+>**Parameters**  
 > - `$width`: positive integer width
 > - `$value`: numerical value
 > - `$data`: numerical list
