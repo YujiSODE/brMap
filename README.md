@@ -25,14 +25,20 @@ It requires Tcl 8.6+.
 >Synopsis
 >`::brmap::brMap map;`
 >
->--- Parameters ---
+>Parameters
 > - $map: text map that is composed of 0, 1 and newline character (Unicode U+00000A)
 
 ### Tcl
 It requires Tcl 8.6+.  
 #### mapGen: Tool that converts linear numerical data into text map
-- `mapGen_upper.tcl`:
+- `mapGen_upper.tcl`: it returns 1 if the current cell value is more than average of its surroundings or 0
+
+>Synopsis
+>`mapGen_upper width data;`
 >
+>Parameters
+> - $width: positive integer width
+> - $data: numerical list
 
 ### JavaScript
 - `canvasToTcl.js`: Tool that scans a canvas element and generates download link for the RGBa data.
