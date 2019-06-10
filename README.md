@@ -60,8 +60,23 @@ It requires Tcl 8.6+.
 > - `$rgba`: a list of RGBa color values (`0` to `255`)
 
 ### JavaScript
-- `canvasToTcl.js`: Tool that scans a canvas element and generates download link for the RGBa data.
+- `canvasToTcl.js`: Tool that scans a canvas element and generates download link for the RGBa data
+
+>**Synopsis**  
+>`canvasToTcl(canvasId);`  
 >
+>**Parameters**  
+> - `canvasId`: id of target canvas element to scan
+> - `x0` and `y0`: top-left coordinates  
+>   `(x0,y0)` = `(0,0)` is default
+> - `w` and `h`: width and height from top-left coordinates  
+>   `(w,h)` = `(100,100)` is default
+> - `element`: an optional element to add download links  
+>   body element is default
+>
+>**Output RGBa data in Tcl**
+> - `$rgbaVar`: a list of RGBa data (`0` to `255`)
+> - `$rgbaWidth`: width of target area
 
 ## 2. Library list
 - 	Sode, Y. 2018-2019. brailleGen/brailleGen_min.tcl, the MIT License: https://gist.github.com/YujiSODE/e3453d43e9733e933c64c52eca45bcfe
