@@ -52,9 +52,11 @@ It requires Tcl 8.6+.
 
 #### rgbaParse: Tool that converts a linear list of RGBa color values `(R,G,B,a)` into a numerical list
 - `rgbaParse.tcl`: `(R,G,B,a)` => `(R+G+B)*a/255`
+- `rgbaParse_alpha.tcl`: `(R,G,B,a)` => `a`
 
 >**Synopsis**  
 >`rgbaParse rgba;`  
+>`rgbaParse_alpha rgba;`  
 >
 >**Parameters**  
 > - `$rgba`: a list of RGBa color values (`0` to `255`)
